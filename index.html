@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Button CSS Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Button Generator</h1>
+  <h2>Change the settings to choose a button, then copy CSS code.</h2>
+  
+  <input id="backgroundColor" type="color" onchange="changeBackground()"/>
+  <label for="backgroundColor">Background Color</label>
+
+  <input id="color" type="color" onchange="changeColor()"/>
+  <label for="color">Font Color</label>
+
+  <input 
+    id="padding"
+    type="range"
+    min="0"
+    max="50"
+    value="0"
+    onchange="changePadding()"
+  />
+  <label for="padding">Padding</label>
+
+  <input 
+    id="borderRadius"
+    type="range"
+    min="0"
+    max="100"
+    value="0"
+    onchange="changeBorderRadius()"
+  />
+
+  <label for="borderRadius">Border Radius</label>
+
+  <input 
+    id="pointer"
+    type="checkbox"
+    onclick="checkCheckBox()"
+  />
+
+  <label for="pointer">Cursor Pointer?</label>
+
+  <input id="textBox" type="text" placeholder="Type button text here" onchange="changeButtonText()"/>
+
+  <button>Text Here</button> 
+  <h2>Copy the CSS code below</h2>
+  <p id="bgCSS"></p>
+  <p id="colorCSS"></p>
+  <p id="paddingCSS"></p>
+  <p id="radiusCSS"></p>
+  <p id="pointerCSS"></p>
+  
+  <script src="script.js"></script> 
+</body>
+
+</html>

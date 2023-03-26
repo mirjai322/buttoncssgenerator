@@ -1,0 +1,46 @@
+* {/*This asterick signifies that the following will apply to everything on the page.*/
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  text-align: center;
+  font-family: monospace;
+  background-color: #f9dddd;
+}
+
+h1{
+  background-color: #c43140;
+  color: white;
+  padding: 20px;
+}
+
+h2{
+  margin: 20px;
+}
+
+button{
+  display: block;
+  margin: 100px auto;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  background-color: #c06d75;
+}
+
+label{
+  margin-right: 10px;
+}
+
+input{
+  margin-left: 10px;
+}
+
+p{
+  font-size: 24px;
+}
+
+#textBox{
+  border: 0.5px solid black;
+  padding: 2px 2px
+}
